@@ -1,33 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="icon" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/8a46a6443f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>
+      Frontend Mentor | Huddle landing page with single introductory section
+    </title>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(0, 0%, 100%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- wrapper -->
+    <div class="d-flex flex-column h-100 p-4 w-100">
+      <!-- start: header -->
+      <!-- company logo -->
+      <label for="company-logo" class="company-logo">
+        <img src="./assets/images/logo.svg" alt="companyLogo"/>
+      </label>
+      <!-- end: header -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+      <!-- start: main content -->
+      <main class="main d-flex h-100 align-items-center">
+        <!-- main image-->
+        <img src="./assets/images/illustration-mockups.svg" alt="hero image"/>
+        <!-- start: content section -->
+        <div class="content-wrapper">
+          <h1 class="text-white">Build The Community</h1>
+          <h1 class="text-white">Your Fans Will Love</h1>
+          <p class="text-white">
+            Huddle re-imagines the way we build communities. You have a voice,
+            but so does your audience. Create connections with your users as you
+            engage in genuine discussion.
+          </p>
+          <input class="btn" type="button" value="Register" />
+        </div>
+        <!-- end: content section -->
+      </main>
+      <!-- end: main content -->
+      <div class="d-flex social-media-icons">
+        <span class="icon-wrapper d-flex align-items-center justify-content-center">
+          <span class="icon fa fa-facebook"></span>
+        </span>
+        <span class="icon-wrapper d-flex align-items-center justify-content-center">
+          <span class="icon fa fa-twitter"></span>
+        </span>
+        <span class="icon-wrapper d-flex align-items-center justify-content-center">
+          <span class="icon fa fa-instagram"></span>
+        </span>
+      </div>
+    </div>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Build The Community Your Fans Will Love
-
-  Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-  Create connections with your users as you engage in genuine discussion. 
-
-  Register
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Jinal Tandel</a>.
+      </p>
+    </footer>
+  </body>
 </html>
